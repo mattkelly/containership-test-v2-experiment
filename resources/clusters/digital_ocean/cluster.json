@@ -1,0 +1,43 @@
+{
+   "labels": {
+      "cluster.containership.io/environment": "mk",
+      "cluster.containership.io/name": "mk-e2e-tmpl"
+   },
+   "plugins": [
+      {
+         "implementation": "prometheus",
+         "type": "metrics"
+      },
+      {
+         "implementation": "containership",
+         "type": "cluster_management"
+      },
+      {
+         "implementation": "cerebral",
+         "type": "autoscaler"
+      },
+      {
+         "implementation": "logstash",
+         "type": "audit_logs"
+      },
+      {
+         "implementation": "nvidia",
+         "type": "gpu_device"
+      },
+      {
+         "implementation": "calico",
+         "type": "cni"
+      },
+      {
+         "implementation": "digitalocean",
+         "type": "csi"
+      },
+      {
+         "implementation": "digitalocean",
+         "type": "cloud_controller_manager"
+      }
+   ],
+   "provider_id": "08cd67a1-6837-487d-894d-d01827fbf840",
+   "template_id": "f0677fc9-3b79-4e14-9525-d65883a65057"
+}
+
